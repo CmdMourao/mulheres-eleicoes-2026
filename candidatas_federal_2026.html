@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mulheres na Eleição 2026 - Deputada Federal</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #fcfafc;
+  color: #332c35;
+}
+
+/* ===== CABEÇALHO ===== */
+
+.topo {
+  position: relative;
+  overflow: hidden;
+
+  background: linear-gradient(
+    135deg,
+    #315f7d 0%,
+    #477f8c 58%,
+    #659a84 100%
+  );
+
+  color: white;
+  padding: 25px 32px 22px 32px;
+  min-height: 145px;
+
+  border-bottom: 3px solid rgba(183,164,178,.45);
+}
+
+.topo-conteudo {
+  position: relative;
+  z-index: 3;
+  max-width: 70%;
+}
+
+.topo h1 {
+  margin: 0;
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: .2px;
+}
+
+.topo h2 {
+  margin: 6px 0 0;
+  font-size: 17px;
+  font-weight: 400;
+  opacity: .95;
+}
+
+.resumo {
+  margin-top: 12px;
+  font-size: 13px;
+  opacity: .9;
+}
+
+/* Câmara abstrata, restrita ao cabeçalho */
+
+.marca-camara {
+  position: absolute;
+  z-index: 1;
+
+  right: 30px;
+  bottom: 0;
+
+  width: 310px;
+  height: 135px;
+
+  opacity: .25;
+  pointer-events: none;
+}
+
+/* uma única torre */
+
+.marca-torre {
+  position: absolute;
+
+  left: 55px;
+  bottom: 10px;
+
+  width: 27px;
+  height: 112px;
+
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,.85),
+    rgba(255,255,255,.42)
+  );
+
+  border-radius: 2px 2px 0 0;
+}
+
+/* linha sutil na torre */
+
+.marca-torre::after {
+  content: "";
+  position: absolute;
+
+  right: 7px;
+  top: 0;
+
+  width: 1px;
+  height: 100%;
+
+  background: rgba(255,255,255,.45);
+}
+
+/* cúpula côncava à direita */
+
+.marca-cupula {
+  position: absolute;
+
+  left: 105px;
+  bottom: 10px;
+
+  width: 155px;
+  height: 59px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,.82),
+    rgba(255,255,255,.32)
+  );
+
+  border-radius: 5px 5px 150px 150px;
+}
+
+/* base quase apagada */
+
+.marca-base {
+  position: absolute;
+
+  left: 38px;
+  bottom: 7px;
+
+  width: 240px;
+  height: 3px;
+
+  background: rgba(255,255,255,.40);
+  border-radius: 50%;
+}
+
+/* curvas decorativas */
+
+.curva {
+  position: absolute;
+  z-index: 1;
+
+  right: -80px;
+
+  width: 460px;
+  height: 115px;
+
+  border-radius: 50%;
+  border-top: 1px solid rgba(238,202,228,.28);
+
+  transform: rotate(-7deg);
+  pointer-events: none;
+}
+
+.curva1 {
+  top: 30px;
+}
+
+.curva2 {
+  top: 52px;
+  right: -105px;
+  border-color: rgba(221,211,236,.22);
+}
+
+/* ===== CONTEÚDO ===== */
+
+.pagina {
+  padding: 28px 32px 35px;
+}
+
+/* ===== TABELA ORIGINAL APROVADA ===== */
+
+.tabela-container {
+  width: 100%;
+  max-height: 72vh;
+  overflow-y: auto;
+  overflow-x: auto;
+  background-color: white;
+  border: 1px solid #e8e3e7;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(70,60,68,.06);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 12px;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  background-color: #f3eff2;
+  color: #514a50;
+
+  padding: 11px 7px;
+  border-bottom: 2px solid #c8bbc4;
+
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+
+  text-align: center !important;
+}
+
+thead th:first-child {
+  text-align: left !important;
+}
+
+tbody td {
+  padding: 8px 7px;
+  border-bottom: 1px solid #eee7ed;
+  vertical-align: middle;
+  text-align: center !important;
+}
+
+tbody td:first-child {
+  text-align: left !important;
+  font-weight: 650;
+  color: #493448;
+  min-width: 145px;
+  border-left: 3px solid transparent;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #faf6f9;
+}
+
+tbody tr:hover {
+  background-color: #f5f1f4;
+}
+
+tbody tr:hover td:first-child {
+  border-left: 3px solid #b7a4b2;
+}
+
+td:nth-child(2),
+td:nth-child(3),
+td:nth-child(4) {
+  font-weight: 600;
+}
+
+td:nth-child(4) {
+  white-space: nowrap;
+}
+
+td:nth-child(5) {
+  min-width: 145px;
+}
+
+td:nth-child(9) {
+  min-width: 105px;
+  white-space: nowrap;
+}
+
+td:nth-child(10) {
+  min-width: 105px;
+}
+
+td:nth-child(11) {
+  min-width: 145px;
+}
+
+a {
+  color: #765273;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #4d324b;
+  text-decoration: underline;
+}
+
+/* ===== PÍLULAS ===== */
+
+.pill {
+  display: inline-block;
+  padding: 3px 7px;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.pill-sim {
+  background-color: #eee8ec;
+  color: #554c52;
+}
+
+.pill-nao {
+  background-color: transparent;
+  color: #777177;
+  border: 1px solid #ddd7db;
+}
+
+.pill-neutra {
+  background-color: #f0f1f0;
+  color: #555b57;
+}
+
+.pill-recurso {
+  background-color: #f4e9ed;
+  color: #745763;
+}
+
+.pill-atencao {
+  background-color: #f5efe4;
+  color: #70624d;
+}
+
+.pill-cinza {
+  background-color: #ececec;
+  color: #666666;
+}
+
+/* ===== NOTAS ===== */
+
+.notas {
+  margin-top: 22px;
+  padding: 15px 18px;
+
+  background-color: #f8f6f7;
+  border-left: 4px solid #b7a4b2;
+  border-radius: 5px;
+
+  font-size: 11px;
+  color: #5e595d;
+  line-height: 1.55;
+}
+
+.notas strong {
+  color: #513a50;
+}
+
+/* ===== TELAS MENORES ===== */
+
+@media (max-width: 800px) {
+
+  .topo-conteudo {
+    max-width: 100%;
+  }
+
+  .marca-camara {
+    opacity: .12;
+    right: -40px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="topo">
+
+  <div class="topo-conteudo">
+
+    <h1>Mulheres na Eleição 2026</h1>
+
+    <h2>
+      Candidatas a Deputada Federal pelo Distrito Federal
+    </h2>
+
+    <div class="resumo">
+      67 candidatas • Dados eleitorais e trajetória política
+    </div>
+
+  </div>
+
+  <div class="curva curva1"></div>
+  <div class="curva curva2"></div>
+
+  <div class="marca-camara">
+    <div class="marca-torre"></div>
+    <div class="marca-cupula"></div>
+    <div class="marca-base"></div>
+  </div>
+
+</div>
+
+<div class="pagina">
+
+  <div class="tabela-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Candidata</th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Número</th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Partido</th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Gov. federal</th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Ocupação</th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Já foi candidata</th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Já foi eleita</th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Declara bens</th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Patrimônio</th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Situação</th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Instagram</th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Idade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'>MÁRCIA ABRAHÃO</td>
+<td style='text-align: center;'>1331</td>
+<td style='text-align: center;'>PT</td>
+<td style='text-align: center;'>97%</td>
+<td style='text-align: center;'>APOSENTADA (EXCETO SERVIDORA PÚBLICA)</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 591.296,16</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/MARCIAABRAHAOMOURA/" target="_blank">@MARCIAABRAHAOMOURA</a></td>
+<td style='text-align: center;'>62</td>
+</tr>
+<tr>
+<td style='text-align: left;'>ROSILENE CORRÊA</td>
+<td style='text-align: center;'>1333</td>
+<td style='text-align: center;'>PT</td>
+<td style='text-align: center;'>97%</td>
+<td style='text-align: center;'>APOSENTADA (EXCETO SERVIDORA PÚBLICA)</td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 479.130,95</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/ROSILENECORREADF/" target="_blank">@ROSILENECORREADF</a></td>
+<td style='text-align: center;'>63</td>
+</tr>
+<tr>
+<td style='text-align: left;'>VANESSA É O BICHO</td>
+<td style='text-align: center;'>1324</td>
+<td style='text-align: center;'>PT</td>
+<td style='text-align: center;'>97%</td>
+<td style='text-align: center;'>SERVIDORA PÚBLICA FEDERAL</td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 293.993,27</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/VANESSAEOBICHO" target="_blank">@VANESSAEOBICHO</a></td>
+<td style='text-align: center;'>52</td>
+</tr>
+<tr>
+<td style='text-align: left;'>JU DOS TIGRADOS</td>
+<td style='text-align: center;'>4300</td>
+<td style='text-align: center;'>PV</td>
+<td style='text-align: center;'>97%</td>
+<td style='text-align: center;'>SECRETÁRIA E DATILÓGRAFA</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 169.210,64</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="https://www.instagram.com/judostigrados/" target="_blank">@judostigrados</a> | <a href="https://www.instagram.com/justicapelostigrados/" target="_blank">@justicapelostigrados</a> | <a href="https://www.instagram.com/miados.ronronados/" target="_blank">@miados.ronronados</a></td>
+<td style='text-align: center;'>49</td>
+</tr>
+<tr>
+<td style='text-align: left;'>JÔ ABREU</td>
+<td style='text-align: center;'>1221</td>
+<td style='text-align: center;'>PDT</td>
+<td style='text-align: center;'>93%</td>
+<td style='text-align: center;'>JORNALISTA E REDATORA</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'>Não declarou</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/JOABREU.8" target="_blank">@JOABREU.8</a></td>
+<td style='text-align: center;'>71</td>
+</tr>
+<tr>
+<td style='text-align: left;'>LARISSA SCHMIDT</td>
+<td style='text-align: center;'>1270</td>
+<td style='text-align: center;'>PDT</td>
+<td style='text-align: center;'>93%</td>
+<td style='text-align: center;'>ADVOGADA</td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 468.500,00</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/LARISSASCHMIDTDF" target="_blank">@LARISSASCHMIDTDF</a></td>
+<td style='text-align: center;'>55</td>
+</tr>
+<tr>
+<td style='text-align: left;'>PROFA. FÁTIMA SOUSA</td>
+<td style='text-align: center;'>1230</td>
+<td style='text-align: center;'>PDT</td>
+<td style='text-align: center;'>93%</td>
+<td style='text-align: center;'>SERVIDORA PÚBLICA FEDERAL</td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 1.344.376,72</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/PROFATIMASOUSA" target="_blank">@PROFATIMASOUSA</a></td>
+<td style='text-align: center;'>66</td>
+</tr>
+<tr>
+<td style='text-align: left;'>CARLA GEHLEN</td>
+<td style='text-align: center;'>4007</td>
+<td style='text-align: center;'>PSB</td>
+<td style='text-align: center;'>91%</td>
+<td style='text-align: center;'>ADVOGADA</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 5.308,00</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/CARLAGELHEN?IGSH=OHZ5A3P4Y3AZCNZZ&UTM_SOURCE=QR" target="_blank">@CARLAGELHEN</a></td>
+<td style='text-align: center;'>47</td>
+</tr>
+<tr>
+<td style='text-align: left;'>DANI FREITAS</td>
+<td style='text-align: center;'>4008</td>
+<td style='text-align: center;'>PSB</td>
+<td style='text-align: center;'>91%</td>
+<td style='text-align: center;'>SERVIDORA PÚBLICA FEDERAL</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 654.083,34</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/DANI.ACF" target="_blank">@DANI.ACF</a> | <a href="HTTPS://WWW.INSTAGRAM.COM/DANIPORDF/" target="_blank">@DANIPORDF</a></td>
+<td style='text-align: center;'>41</td>
+</tr>
+<tr>
+<td style='text-align: left;'>DANI SOLTA O VERBO</td>
+<td style='text-align: center;'>4022</td>
+<td style='text-align: center;'>PSB</td>
+<td style='text-align: center;'>91%</td>
+<td style='text-align: center;'>DONA DE CASA</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 894.945,69</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/DANISOLTAOVERBO?IGSH=BHU3NZBOEDDPOGHJ." target="_blank">@DANISOLTAOVERBO</a></td>
+<td style='text-align: center;'>55</td>
+</tr>
+<tr>
+<td style='text-align: left;'>RAQUEL MEDEIROS</td>
+<td style='text-align: center;'>4000</td>
+<td style='text-align: center;'>PSB</td>
+<td style='text-align: center;'>91%</td>
+<td style='text-align: center;'>EMPRESÁRIA</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 49.000,00</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/RAQUELMEDEIROSDF?IGSH=MWO1Z3I1ATJVEMXMZQ%3D%3D&UTM_SOU" target="_blank">@RAQUELMEDEIROSDF</a></td>
+<td style='text-align: center;'>40</td>
+</tr>
+<tr>
+<td style='text-align: left;'>DRA RAQUEL FERREIRA</td>
+<td style='text-align: center;'>5040</td>
+<td style='text-align: center;'>PSOL</td>
+<td style='text-align: center;'>91%</td>
+<td style='text-align: center;'>OUTRAS</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 948.007,60</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/DRARAQUELFERREIRAPSOL/" target="_blank">@DRARAQUELFERREIRAPSOL</a> | <a href="HTTPS://WWW.INSTAGRAM.COM/EU.MEDICADEGENTE/" target="_blank">@EU.MEDICADEGENTE</a></td>
+<td style='text-align: center;'>40</td>
+</tr>
+<tr>
+<td style='text-align: left;'>ENFERMEIRA KARINE</td>
+<td style='text-align: center;'>5080</td>
+<td style='text-align: center;'>PSOL</td>
+<td style='text-align: center;'>91%</td>
+<td style='text-align: center;'>ENFERMEIRA</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'>Não declarou</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/@ENF.KARINEAFONSECA" target="_blank">@ENF.KARINEAFONSECA</a></td>
+<td style='text-align: center;'>39</td>
+</tr>
+<tr>
+<td style='text-align: left;'>LUDMILA SUAID</td>
+<td style='text-align: center;'>5005</td>
+<td style='text-align: center;'>PSOL</td>
+<td style='text-align: center;'>91%</td>
+<td style='text-align: center;'>SERVIDORA PÚBLICA FEDERAL</td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 621.500,00</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/LUDMILASUAID/" target="_blank">@LUDMILASUAID</a></td>
+<td style='text-align: center;'>47</td>
+</tr>
+<tr>
+<td style='text-align: left;'>NEIVA LOPES</td>
+<td style='text-align: center;'>5000</td>
+<td style='text-align: center;'>PSOL</td>
+<td style='text-align: center;'>91%</td>
+<td style='text-align: center;'>VIGILANTE</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'>Não declarou</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'>Não informado</td>
+<td style='text-align: center;'>51</td>
+</tr>
+<tr>
+<td style='text-align: left;'>MARIA CLEUDES</td>
+<td style='text-align: center;'>1801</td>
+<td style='text-align: center;'>REDE</td>
+<td style='text-align: center;'>90%</td>
+<td style='text-align: center;'>ASSISTENTE SOCIAL</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'>Não declarou</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/MARIA.CLEUDES.PESSOA?IGSH=MZB4AWMYY2O2AHO4" target="_blank">@MARIA.CLEUDES.PESSOA</a></td>
+<td style='text-align: center;'>53</td>
+</tr>
+<tr>
+<td style='text-align: left;'>GERCIANE</td>
+<td style='text-align: center;'>7777</td>
+<td style='text-align: center;'>SOLIDARIEDADE</td>
+<td style='text-align: center;'>81%</td>
+<td style='text-align: center;'>AGENTE ADMINISTRATIVA</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'>Não declarou</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'>Não informado</td>
+<td style='text-align: center;'>37</td>
+</tr>
+<tr>
+<td style='text-align: left;'>LETICIA LEAL</td>
+<td style='text-align: center;'>7710</td>
+<td style='text-align: center;'>SOLIDARIEDADE</td>
+<td style='text-align: center;'>81%</td>
+<td style='text-align: center;'>ADMINISTRADORA</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'>Não declarou</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'>Não informado</td>
+<td style='text-align: center;'>38</td>
+</tr>
+<tr>
+<td style='text-align: left;'>ANA FEROLA</td>
+<td style='text-align: center;'>7052</td>
+<td style='text-align: center;'>AVANTE</td>
+<td style='text-align: center;'>78%</td>
+<td style='text-align: center;'>TERAPEUTA</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 95.000.000,00</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="https://www.instagram.com/ana.ferola?igsi=eHk3ZHM3cXViNTJl&utm_source=qr" target="_blank">@ana.ferola</a></td>
+<td style='text-align: center;'>41</td>
+</tr>
+<tr>
+<td style='text-align: left;'>GLAUCIA DO ARRUDA</td>
+<td style='text-align: center;'>7055</td>
+<td style='text-align: center;'>AVANTE</td>
+<td style='text-align: center;'>78%</td>
+<td style='text-align: center;'>ADVOGADA</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'>Não declarou</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'>Não informado</td>
+<td style='text-align: center;'>51</td>
+</tr>
+<tr>
+<td style='text-align: left;'>PASTORA ANA LIMA</td>
+<td style='text-align: center;'>7033</td>
+<td style='text-align: center;'>AVANTE</td>
+<td style='text-align: center;'>78%</td>
+<td style='text-align: center;'>OUTRAS</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'>Não declarou</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="https://www.instagram.com/pastoraanalima/" target="_blank">@pastoraanalima</a></td>
+<td style='text-align: center;'>57</td>
+</tr>
+<tr>
+<td style='text-align: left;'>ABADIA</td>
+<td style='text-align: center;'>5566</td>
+<td style='text-align: center;'>PSD</td>
+<td style='text-align: center;'>76%</td>
+<td style='text-align: center;'>APOSENTADA (EXCETO SERVIDORA PÚBLICA)</td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 4.265.077,85</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/MARIAABADIAOFICIAL/" target="_blank">@MARIAABADIAOFICIAL</a></td>
+<td style='text-align: center;'>82</td>
+</tr>
+<tr>
+<td style='text-align: left;'>ADILA MARIA</td>
+<td style='text-align: center;'>5500</td>
+<td style='text-align: center;'>PSD</td>
+<td style='text-align: center;'>76%</td>
+<td style='text-align: center;'>COMERCIANTE</td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'>Não declarou</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/ADILAMARIADF/" target="_blank">@ADILAMARIADF</a></td>
+<td style='text-align: center;'>58</td>
+</tr>
+<tr>
+<td style='text-align: left;'>CAROL FLEURY</td>
+<td style='text-align: center;'>5555</td>
+<td style='text-align: center;'>PSD</td>
+<td style='text-align: center;'>76%</td>
+<td style='text-align: center;'>EMPRESÁRIA</td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 2.349.141,61</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/CAROLFLEURYOFICIAL/" target="_blank">@CAROLFLEURYOFICIAL</a></td>
+<td style='text-align: center;'>45</td>
+</tr>
+<tr>
+<td style='text-align: left;'>CAROL RIBEIRO</td>
+<td style='text-align: center;'>2088</td>
+<td style='text-align: center;'>PODE</td>
+<td style='text-align: center;'>75%</td>
+<td style='text-align: center;'>AUXILIAR DE ESCRITÓRIO E ASSEMELHADAS</td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 19.000,00</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="https://www.instagram.com/carolribeiropodemos/" target="_blank">@carolribeiropodemos</a></td>
+<td style='text-align: center;'>39</td>
+</tr>
+<tr>
+<td style='text-align: left;'>MAYARA NORONHA</td>
+<td style='text-align: center;'>2027</td>
+<td style='text-align: center;'>PODE</td>
+<td style='text-align: center;'>75%</td>
+<td style='text-align: center;'>ADVOGADA</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 4.538.288,74</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'>Não informado</td>
+<td style='text-align: center;'>39</td>
+</tr>
+<tr>
+<td style='text-align: left;'>SUBTENENTE VERA</td>
+<td style='text-align: center;'>2090</td>
+<td style='text-align: center;'>PODE</td>
+<td style='text-align: center;'>75%</td>
+<td style='text-align: center;'>POLICIAL MILITAR</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 280.000,00</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'>Não informado</td>
+<td style='text-align: center;'>57</td>
+</tr>
+<tr>
+<td style='text-align: left;'>CAROL FURLAN</td>
+<td style='text-align: center;'>1086</td>
+<td style='text-align: center;'>REPUBLICANOS</td>
+<td style='text-align: center;'>75%</td>
+<td style='text-align: center;'>EMPRESÁRIA</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 546.579,61</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/CAROLINEFURLAN86?IGSH=MWWZB3ZMYZRMDTRLMQ%3D%3D" target="_blank">@CAROLINEFURLAN86</a></td>
+<td style='text-align: center;'>40</td>
+</tr>
+<tr>
+<td style='text-align: left;'>CRIS BRITTO</td>
+<td style='text-align: center;'>1022</td>
+<td style='text-align: center;'>REPUBLICANOS</td>
+<td style='text-align: center;'>75%</td>
+<td style='text-align: center;'>ADVOGADA</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 739.495,52</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/CRISTIANEBRITTOOFICIAL/" target="_blank">@CRISTIANEBRITTOOFICIAL</a></td>
+<td style='text-align: center;'>48</td>
+</tr>
+<tr>
+<td style='text-align: left;'>LIZA LOPES</td>
+<td style='text-align: center;'>1001</td>
+<td style='text-align: center;'>REPUBLICANOS</td>
+<td style='text-align: center;'>75%</td>
+<td style='text-align: center;'>EMPRESÁRIA</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'>Não declarou</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/LIZALOPES.DF" target="_blank">@LIZALOPES.DF</a></td>
+<td style='text-align: center;'>43</td>
+</tr>
+<tr>
+<td style='text-align: left;'>ELAINE PINK</td>
+<td style='text-align: center;'>4577</td>
+<td style='text-align: center;'>PSDB</td>
+<td style='text-align: center;'>73%</td>
+<td style='text-align: center;'>EMPRESÁRIA</td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 20.000,00</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="https://www.instagram.com/elainepinkbrasil?igsh=OTBzanpoOTE3b28=" target="_blank">@elainepinkbrasil</a></td>
+<td style='text-align: center;'>46</td>
+</tr>
+<tr>
+<td style='text-align: left;'>FLÁVIA PORTELA</td>
+<td style='text-align: center;'>4567</td>
+<td style='text-align: center;'>PSDB</td>
+<td style='text-align: center;'>73%</td>
+<td style='text-align: center;'>ARQUITETA</td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 2.620.000,00</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="https://www.instagram.com/flaviaportelabsb?igsh=MXdyZXM0ZzdiY3d2aQ==" target="_blank">@flaviaportelabsb</a></td>
+<td style='text-align: center;'>65</td>
+</tr>
+<tr>
+<td style='text-align: left;'>KARLA VINHAS</td>
+<td style='text-align: center;'>4500</td>
+<td style='text-align: center;'>PSDB</td>
+<td style='text-align: center;'>73%</td>
+<td style='text-align: center;'>EMPRESÁRIA</td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'>Não declarou</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="https://www.instagram.com/karlavinhascomvc/" target="_blank">@karlavinhascomvc</a> | <a href="https://www.instagram.com/akarlavinhas/" target="_blank">@akarlavinhas</a></td>
+<td style='text-align: center;'>41</td>
+</tr>
+<tr>
+<td style='text-align: left;'>LEIA XAVIER</td>
+<td style='text-align: center;'>4566</td>
+<td style='text-align: center;'>PSDB</td>
+<td style='text-align: center;'>73%</td>
+<td style='text-align: center;'>PROFESSORA DE ENSINO SUPERIOR</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 20.000,00</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="https://www.instagram.com/leiaxavierxavier?igsh=MW5mdHQ2dnoyNXJ4cg==" target="_blank">@leiaxavierxavier</a></td>
+<td style='text-align: center;'>58</td>
+</tr>
+<tr>
+<td style='text-align: left;'>HÉLVIA PARANAGUÁ</td>
+<td style='text-align: center;'>1522</td>
+<td style='text-align: center;'>MDB</td>
+<td style='text-align: center;'>72%</td>
+<td style='text-align: center;'>PROFESSORA DE ENSINO MÉDIO</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 1.886.642,82</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/HELVIAPARANAGUA/" target="_blank">@HELVIAPARANAGUA</a></td>
+<td style='text-align: center;'>63</td>
+</tr>
+<tr>
+<td style='text-align: left;'>JOSY JACOB</td>
+<td style='text-align: center;'>1551</td>
+<td style='text-align: center;'>MDB</td>
+<td style='text-align: center;'>72%</td>
+<td style='text-align: center;'>SERVIDORA PÚBLICA ESTADUAL</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 1.970.000,00</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/JOSYJACOB_/" target="_blank">@JOSYJACOB_</a></td>
+<td style='text-align: center;'>40</td>
+</tr>
+<tr>
+<td style='text-align: left;'>PAMELA ÁGUIA</td>
+<td style='text-align: center;'>1505</td>
+<td style='text-align: center;'>MDB</td>
+<td style='text-align: center;'>72%</td>
+<td style='text-align: center;'>SERVIDORA PÚBLICA FEDERAL</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 130.000,00</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="https://www.instagram.com/pamelaguia" target="_blank">@pamelaguia</a></td>
+<td style='text-align: center;'>44</td>
+</tr>
+<tr>
+<td style='text-align: left;'>DRA. MARINA NORONHA</td>
+<td style='text-align: center;'>1117</td>
+<td style='text-align: center;'>PP</td>
+<td style='text-align: center;'>70%</td>
+<td style='text-align: center;'>OUTRAS</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'>Não declarou</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'>Não informado</td>
+<td style='text-align: center;'>45</td>
+</tr>
+<tr>
+<td style='text-align: left;'>VALDIRENE TAVARES</td>
+<td style='text-align: center;'>1111</td>
+<td style='text-align: center;'>PP</td>
+<td style='text-align: center;'>70%</td>
+<td style='text-align: center;'>SECRETÁRIA E DATILÓGRAFA</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 1.080.000,00</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="https://www.instagram.com/juventudecomvaldirene?stkn=cGNyNHBhd3ltOHFn&utm_source=qr" target="_blank">@juventudecomvaldirene</a> | <a href="https://www.instagram.com/valdirenedf" target="_blank">@valdirenedf</a> | <a href="https://www.instagram.com/valdirenetavaressantos/" target="_blank">@valdirenetavaressantos</a></td>
+<td style='text-align: center;'>54</td>
+</tr>
+<tr>
+<td style='text-align: left;'>DRA. GARDENIA</td>
+<td style='text-align: center;'>4456</td>
+<td style='text-align: center;'>UNIÃO</td>
+<td style='text-align: center;'>67%</td>
+<td style='text-align: center;'>SERVIDORA PÚBLICA ESTADUAL</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'>Não declarou</td>
+<td style='text-align: center;'><span class="pill pill-recurso">INDEFERIDO EM PRAZO RECURSAL OU COM RECURSO</span></td>
+<td style='text-align: center;'>Não informado</td>
+<td style='text-align: center;'>53</td>
+</tr>
+<tr>
+<td style='text-align: left;'>ESTER CARVALHO</td>
+<td style='text-align: center;'>4455</td>
+<td style='text-align: center;'>UNIÃO</td>
+<td style='text-align: center;'>67%</td>
+<td style='text-align: center;'>ESTUDANTE, BOLSISTA, ESTAGIÁRIA E ASSEMELHADAS</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'>Não declarou</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/ESTERCARVALHOOFICIAL_/" target="_blank">@ESTERCARVALHOOFICIAL_</a></td>
+<td style='text-align: center;'>23</td>
+</tr>
+<tr>
+<td style='text-align: left;'>PROF. DÍDIA</td>
+<td style='text-align: center;'>4456</td>
+<td style='text-align: center;'>UNIÃO</td>
+<td style='text-align: center;'>67%</td>
+<td style='text-align: center;'>SERVIDORA PÚBLICA CIVIL APOSENTADA</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 1.035,84</td>
+<td style='text-align: center;'><span class="pill pill-cinza">RENÚNCIA</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/PROFA.DIDIA" target="_blank">@PROFA.DIDIA</a></td>
+<td style='text-align: center;'>61</td>
+</tr>
+<tr>
+<td style='text-align: left;'>SUBTENENTE CINTYA</td>
+<td style='text-align: center;'>2523</td>
+<td style='text-align: center;'>PRD</td>
+<td style='text-align: center;'>65%</td>
+<td style='text-align: center;'>POLICIAL MILITAR</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'>Não declarou</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'>Não informado</td>
+<td style='text-align: center;'>48</td>
+</tr>
+<tr>
+<td style='text-align: left;'>MARIANA DE PAULA</td>
+<td style='text-align: center;'>2311</td>
+<td style='text-align: center;'>CIDADANIA</td>
+<td style='text-align: center;'>64%</td>
+<td style='text-align: center;'>ESTUDANTE, BOLSISTA, ESTAGIÁRIA E ASSEMELHADAS</td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'>Não declarou</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="https://www.instagram.com/mariiidepaulaaaaa?igsi=MTRvYzNxd3l3MHRqZA==" target="_blank">@mariiidepaulaaaaa</a></td>
+<td style='text-align: center;'>41</td>
+</tr>
+<tr>
+<td style='text-align: left;'>IVONE LOPES</td>
+<td style='text-align: center;'>2777</td>
+<td style='text-align: center;'>DC</td>
+<td style='text-align: center;'>60%</td>
+<td style='text-align: center;'>OUTRAS</td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 290.000,00</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'>Não informado</td>
+<td style='text-align: center;'>50</td>
+</tr>
+<tr>
+<td style='text-align: left;'>MILENA SOUSA</td>
+<td style='text-align: center;'>2770</td>
+<td style='text-align: center;'>DC</td>
+<td style='text-align: center;'>60%</td>
+<td style='text-align: center;'>ESTUDANTE, BOLSISTA, ESTAGIÁRIA E ASSEMELHADAS</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'>Não declarou</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'>Não informado</td>
+<td style='text-align: center;'>28</td>
+</tr>
+<tr>
+<td style='text-align: left;'>SOCORRO MARTINS</td>
+<td style='text-align: center;'>2750</td>
+<td style='text-align: center;'>DC</td>
+<td style='text-align: center;'>60%</td>
+<td style='text-align: center;'>OUTRAS</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'>Não declarou</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'>Não informado</td>
+<td style='text-align: center;'>42</td>
+</tr>
+<tr>
+<td style='text-align: left;'>MARIA AMÉLIA</td>
+<td style='text-align: center;'>2223</td>
+<td style='text-align: center;'>PL</td>
+<td style='text-align: center;'>33%</td>
+<td style='text-align: center;'>EMPRESÁRIA</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 3.550.000,00</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/MARIAAMELIA.DF?IGSH=OGVXAXBXAMY2N3HW" target="_blank">@MARIAAMELIA.DF</a></td>
+<td style='text-align: center;'>58</td>
+</tr>
+<tr>
+<td style='text-align: left;'>MARIANA NAIME</td>
+<td style='text-align: center;'>2201</td>
+<td style='text-align: center;'>PL</td>
+<td style='text-align: center;'>33%</td>
+<td style='text-align: center;'>DONA DE CASA</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 15.102,30</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="WWW.INSTAGRAM.COM/MARIANA.NAIME/" target="_blank">@WWW.INSTAGRAM.COM/MARIANA.NAIME</a></td>
+<td style='text-align: center;'>41</td>
+</tr>
+<tr>
+<td style='text-align: left;'>SANDRA FARAJ</td>
+<td style='text-align: center;'>2277</td>
+<td style='text-align: center;'>PL</td>
+<td style='text-align: center;'>33%</td>
+<td style='text-align: center;'>ADMINISTRADORA</td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 62.225,48</td>
+<td style='text-align: center;'><span class="pill pill-recurso">DEFERIDO EM PRAZO RECURSAL OU COM RECURSO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/SANDRAFARAJ/" target="_blank">@SANDRAFARAJ</a></td>
+<td style='text-align: center;'>52</td>
+</tr>
+<tr>
+<td style='text-align: left;'>CAMILA CORRÊA</td>
+<td style='text-align: center;'>1441</td>
+<td style='text-align: center;'>MISSÃO</td>
+<td style='text-align: center;'>15%</td>
+<td style='text-align: center;'>OUTRAS</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'>Não declarou</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="https://instagram.com/camilacorrea_missao" target="_blank">@camilacorrea_missao</a></td>
+<td style='text-align: center;'>28</td>
+</tr>
+<tr>
+<td style='text-align: left;'>MARTA LIMA</td>
+<td style='text-align: center;'>1456</td>
+<td style='text-align: center;'>MISSÃO</td>
+<td style='text-align: center;'>15%</td>
+<td style='text-align: center;'>OUTRAS</td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 40.000,00</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="https://instagram.com/martaclerialima" target="_blank">@martaclerialima</a></td>
+<td style='text-align: center;'>62</td>
+</tr>
+<tr>
+<td style='text-align: left;'>ALE CHIANELLI</td>
+<td style='text-align: center;'>3022</td>
+<td style='text-align: center;'>NOVO</td>
+<td style='text-align: center;'>15%</td>
+<td style='text-align: center;'>JORNALISTA E REDATORA</td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 130.000,00</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="https://www.instagram.com/alechianelli" target="_blank">@alechianelli</a></td>
+<td style='text-align: center;'>54</td>
+</tr>
+<tr>
+<td style='text-align: left;'>CARINE TEIXEIRA</td>
+<td style='text-align: center;'>3030</td>
+<td style='text-align: center;'>NOVO</td>
+<td style='text-align: center;'>15%</td>
+<td style='text-align: center;'>EMPRESÁRIA</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 120.000,00</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="https://www.instagram.com/carineteixeira.adv" target="_blank">@carineteixeira.adv</a></td>
+<td style='text-align: center;'>40</td>
+</tr>
+<tr>
+<td style='text-align: left;'>CIDA VILLAS BÔAS</td>
+<td style='text-align: center;'>3036</td>
+<td style='text-align: center;'>NOVO</td>
+<td style='text-align: center;'>15%</td>
+<td style='text-align: center;'>DONA DE CASA</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 5.860.000,00</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/CIDA_VILLASBOAS" target="_blank">@CIDA_VILLASBOAS</a></td>
+<td style='text-align: center;'>74</td>
+</tr>
+<tr>
+<td style='text-align: left;'>NANA</td>
+<td style='text-align: center;'>3033</td>
+<td style='text-align: center;'>NOVO</td>
+<td style='text-align: center;'>15%</td>
+<td style='text-align: center;'>OUTRAS</td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 1.150.000,00</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/NANACACHEN" target="_blank">@NANACACHEN</a></td>
+<td style='text-align: center;'>52</td>
+</tr>
+<tr>
+<td style='text-align: left;'>TIA NEGA</td>
+<td style='text-align: center;'>3600</td>
+<td style='text-align: center;'>AGIR</td>
+<td style='text-align: center;'>Sem representação atual na CD</td>
+<td style='text-align: center;'>PEDAGOGA</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 335.000,00</td>
+<td style='text-align: center;'><span class="pill pill-recurso">INDEFERIDO EM PRAZO RECURSAL OU COM RECURSO</span></td>
+<td style='text-align: center;'>Não informado</td>
+<td style='text-align: center;'>48</td>
+</tr>
+<tr>
+<td style='text-align: left;'>IARA NARDIA</td>
+<td style='text-align: center;'>3522</td>
+<td style='text-align: center;'>DEMOCRATA</td>
+<td style='text-align: center;'>Sem representação atual na CD</td>
+<td style='text-align: center;'>TERAPEUTA</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 40.000,00</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/IARANARDIA?IGSH=MTLJMMJLOHEZZWVQCQ==" target="_blank">@IARANARDIA</a></td>
+<td style='text-align: center;'>60</td>
+</tr>
+<tr>
+<td style='text-align: left;'>LAIRA INÁCIO</td>
+<td style='text-align: center;'>3535</td>
+<td style='text-align: center;'>DEMOCRATA</td>
+<td style='text-align: center;'>Sem representação atual na CD</td>
+<td style='text-align: center;'>OUTRAS</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'>Não declarou</td>
+<td style='text-align: center;'><span class="pill pill-atencao">PEDIDO NÃO CONHECIDO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/LAIRA.INACIO?IGSH=MW1SODLOBJKZM21IBW==" target="_blank">@LAIRA.INACIO</a></td>
+<td style='text-align: center;'>34</td>
+</tr>
+<tr>
+<td style='text-align: left;'>NOELY COLETIVO CORAGEM</td>
+<td style='text-align: center;'>3535</td>
+<td style='text-align: center;'>DEMOCRATA</td>
+<td style='text-align: center;'>Sem representação atual na CD</td>
+<td style='text-align: center;'>ENFERMEIRA</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 38.000,00</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="INSTAGRAM: NOELY.MORAIS" target="_blank">@INSTAGRAM: NOELY.MORAIS</a></td>
+<td style='text-align: center;'>54</td>
+</tr>
+<tr>
+<td style='text-align: left;'>STEPHANIE ALVES</td>
+<td style='text-align: center;'>3525</td>
+<td style='text-align: center;'>DEMOCRATA</td>
+<td style='text-align: center;'>Sem representação atual na CD</td>
+<td style='text-align: center;'>OUTRAS</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'>Não declarou</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/MAMAE.DO.ISAQUE.RESERVA?UTM_SOURCE=QR" target="_blank">@MAMAE.DO.ISAQUE.RESERVA</a> | <a href="HTTPS://WWW.INSTAGRAM.COM/STEPHANIEALVESS__?UTM_SOURCE=QR" target="_blank">@STEPHANIEALVESS__</a></td>
+<td style='text-align: center;'>25</td>
+</tr>
+<tr>
+<td style='text-align: left;'>ISAURA BARBOSA</td>
+<td style='text-align: center;'>3332</td>
+<td style='text-align: center;'>MOBILIZA</td>
+<td style='text-align: center;'>Sem representação atual na CD</td>
+<td style='text-align: center;'>APOSENTADA (EXCETO SERVIDORA PÚBLICA)</td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 1.564.056,73</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/ISAURABMIRANDA" target="_blank">@ISAURABMIRANDA</a></td>
+<td style='text-align: center;'>75</td>
+</tr>
+<tr>
+<td style='text-align: left;'>PROFESSORA JULIANA ALVES</td>
+<td style='text-align: center;'>3344</td>
+<td style='text-align: center;'>MOBILIZA</td>
+<td style='text-align: center;'>Sem representação atual na CD</td>
+<td style='text-align: center;'>PROFESSORA E INSTRUTORA DE FORMAÇÃO PROFISSIONAL</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'>Não declarou</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/JU_ALVESSERPA" target="_blank">@JU_ALVESSERPA</a></td>
+<td style='text-align: center;'>43</td>
+</tr>
+<tr>
+<td style='text-align: left;'>RITA BALLOCK</td>
+<td style='text-align: center;'>3333</td>
+<td style='text-align: center;'>MOBILIZA</td>
+<td style='text-align: center;'>Sem representação atual na CD</td>
+<td style='text-align: center;'>EMPRESÁRIA</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 2.200.000,00</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'><a href="https://www.instagram.com/RITABALLOCK33" target="_blank">@RITABALLOCK33</a> | <a href="HTTPS://WWW.INSTAGRAM.COM/RITABALLOCK33" target="_blank">@RITABALLOCK33</a></td>
+<td style='text-align: center;'>70</td>
+</tr>
+<tr>
+<td style='text-align: left;'>AGUIDA MARIA</td>
+<td style='text-align: center;'>2900</td>
+<td style='text-align: center;'>PCO</td>
+<td style='text-align: center;'>Sem representação atual na CD</td>
+<td style='text-align: center;'>SERVIDORA PÚBLICA CIVIL APOSENTADA</td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 428.364,00</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'>Não informado</td>
+<td style='text-align: center;'>65</td>
+</tr>
+<tr>
+<td style='text-align: left;'>ANA SCHRAMM</td>
+<td style='text-align: center;'>2999</td>
+<td style='text-align: center;'>PCO</td>
+<td style='text-align: center;'>Sem representação atual na CD</td>
+<td style='text-align: center;'>OUTRAS</td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='text-align: center;'>R$ 26.000,00</td>
+<td style='text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='text-align: center;'>Não informado</td>
+<td style='text-align: center;'>45</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>MILENA DO MLB</td>
+<td style='border-bottom: 2px solid grey; text-align: center;'>8000</td>
+<td style='border-bottom: 2px solid grey; text-align: center;'>UP</td>
+<td style='border-bottom: 2px solid grey; text-align: center;'>Sem representação atual na CD</td>
+<td style='border-bottom: 2px solid grey; text-align: center;'>ESTUDANTE, BOLSISTA, ESTAGIÁRIA E ASSEMELHADAS</td>
+<td style='border-bottom: 2px solid grey; text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='border-bottom: 2px solid grey; text-align: center;'><span class="pill pill-nao">Não</span></td>
+<td style='border-bottom: 2px solid grey; text-align: center;'><span class="pill pill-sim">Sim</span></td>
+<td style='border-bottom: 2px solid grey; text-align: center;'>R$ 1.404,35</td>
+<td style='border-bottom: 2px solid grey; text-align: center;'><span class="pill pill-neutra">DEFERIDO</span></td>
+<td style='border-bottom: 2px solid grey; text-align: center;'><a href="HTTPS://WWW.INSTAGRAM.COM/MILENA.MARTINS._?IGSH=MWN0YNIXBXFTNJA5CG==" target="_blank">@MILENA.MARTINS._</a> | <a href="HTTPS://WWW.INSTAGRAM.COM/UNIDADEPOPULAR.DF?IGSH=AMNJBWVLBHRYBGU3" target="_blank">@UNIDADEPOPULAR.DF</a></td>
+<td style='border-bottom: 2px solid grey; text-align: center;'>26</td>
+</tr>
+</tbody>
+</table></div>
+
+  <div class="notas"><p><strong>Sobre os dados:</strong> informações extraídas dos Dados Abertos do Tribunal Superior Eleitoral (TSE) referentes às Eleições 2026.</p><p><strong>Índice de governismo:</strong> calculado a partir do percentual de votos dos partidos em conformidade com a orientação da Liderança do Governo Federal nas votações nominais analisadas na Câmara dos Deputados em 2026, em levantamento realizado até 25/08/2026. Partidos sem valor disponível no levantamento permanecem sem índice. O indicador descreve o comportamento agregado da bancada e não permite inferir o posicionamento individual da candidata.</p><p><strong>Trajetória eleitoral:</strong> "Já foi candidata" considera candidaturas anteriores identificadas no histórico utilizado, a partir de 2006. "Já foi eleita" indica a existência de resultado eleitoral anterior registrado como eleita, eleita por quociente partidário ou eleita por média. O indicador não equivale necessariamente ao exercício efetivo de mandato.</p><p><strong>Patrimônio:</strong> "Não declarou" indica que a candidata informou não declarar bens no conjunto de dados utilizado; não significa patrimônio igual a zero.</p><p><strong>Certidões criminais:</strong> considerando o universo total da pesquisa, composto por 219 candidatas aos cargos proporcionais no Distrito Federal, sendo 67 candidatas a deputada federal e 152 a deputada distrital, o conjunto disponibilizado pelo TSE contém 775 documentos associados a 218 candidatas. O número de documentos por candidata varia de 1 a 10. Como as certidões não constituem uma base estruturada e podem estar disponíveis como documentos digitalizados sem camada de texto, não foi criada uma variável de antecedentes criminais. A quantidade de documentos não permite inferir existência ou inexistência de ocorrências. Eventual verificação deve ser realizada diretamente nas certidões da candidata analisada.</p></div></div></body>
+</html>
